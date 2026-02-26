@@ -5,13 +5,8 @@ const applicationRoutes = require('./routes/applicationRoutes');
 const app = express();
 
 app.use(express.json());
+app.use(cors()); // ✅ Allow all origins
 
-const corsOptions = {
-  origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
-  optionsSuccessStatus: 200
-};
-
-app.use(cors(corsOptions));
 app.get('/', (req, res) => {
   res.send('Backend is running 🚀');
 });
