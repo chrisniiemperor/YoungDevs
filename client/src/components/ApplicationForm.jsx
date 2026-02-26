@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./ApplicationForm.css";
+import axios from "axios";
 import confetti from "canvas-confetti";
 const ApplicationForm = () => {
   const [formData, setFormData] = useState({
@@ -189,7 +189,7 @@ confetti({
                 Submitting...
               </span>
             ) : (
-              "Submit Application"
+              "SUBMIT"
             )}
           </button>
 

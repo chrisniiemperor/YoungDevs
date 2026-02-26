@@ -1,8 +1,9 @@
-import ApplicationForm from './components/ApplicationForm';
+import "./App.css";
+import ApplicationForm from "./components/ApplicationForm";
 
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <ApplicationForm />
     </div>
   );
