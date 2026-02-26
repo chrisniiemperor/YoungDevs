@@ -9,13 +9,13 @@ app.use(cors()); // ✅ Allow all origins
 
 app.get('/', (req, res) => {
   res.send('Backend is running 🚀');
-});
+  });
 
-app.use('/api', applicationRoutes);
+  app.use('/api', applicationRoutes);
 
-app.use((err, req, res, next) => {
-  console.error('Global error handler:', err.stack);
-  res.status(500).json({ message: 'Something went wrong on the server.' });
-});
+  app.use((err, req, res, next) => {
+    console.error('Global error handler:', err.stack);
+      res.status(500).json({ message: 'Something went wrong on the server.' });
+      });
 
-module.exports = app;
+      module.exports = app;

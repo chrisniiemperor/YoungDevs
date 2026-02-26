@@ -28,8 +28,8 @@ const ApplicationForm = () => {
 
     try {
       const response = await axios.post(
-        "https://youngdevs.onrender.com/api/apply",formData);
-
+        "https://youngdevs.onrender.com/api/apply",
+        formData);
       setStatusMessage(response.data.message);
       setSubmitted(true); // ✅ Show success screen
 // 🎊 Fire real confetti
