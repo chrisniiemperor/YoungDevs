@@ -28,7 +28,7 @@ const ApplicationForm = () => {
 
     try {
       const response = await axios.post(
-        "https://youngdevs.onrender.com",
+        "https://youngdevs.onrender.com/api/apply",
         formData
       );
 
